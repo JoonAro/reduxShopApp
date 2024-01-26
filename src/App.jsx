@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./routes/About";
 import Products from "./routes/Products";
 import Cart from "./routes/Cart";
-import Product from "./components/Product";
+import ProductSingle from "./routes/ProductSingle";
 import NotFound404 from "./routes/NotFound404";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
@@ -34,7 +34,7 @@ function App() {
         },
         {
           path: "/products/:id",
-          element: <Product />,
+          element: <ProductSingle />,
         },
         {
           path: "*",
